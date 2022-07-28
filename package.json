@@ -1,0 +1,28 @@
+{
+  "name": "monotab",
+  "version": "1.0.0",
+  "description": "Text tab player and editor",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Senchi3/Monotab"
+  },
+  "keywords": [
+    "music",
+    "tab",
+    "guitar",
+    "player",
+    "midi",
+    "daw"
+  ],
+  "author": "Senchi3",
+  "license": "MIT",
+  "dependencies": {
+    "midi-player-js": "^2.0.16",
+    "midi-writer-js": "^2.1.0"
+  }
+}
