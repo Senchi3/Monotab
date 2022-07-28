@@ -9,22 +9,22 @@ body {
 }
 
 p {
-  font-family: "Merriweather", serif;
+  font-family: "JetBrains Mono";
 }
 
 ul {
-  font-family: "Merriweather", serif;
+  font-family: "JetBrains Mono";
   list-style-type: circle;
   list-style-position: outside;
 }
 
 li {
-  font-family: "Merriweather", serif;
+  font-family: "JetBrains Mono";
   list-style-position: outside;
 }
 
 a {
-  font-family: "Merriweather", serif;
+  font-family: "JetBrains Mono";
 }
 
 li {
@@ -32,6 +32,10 @@ li {
 }
 
 
+
+.textarea {
+  font-family: "JetBrains Mono";
+}
 
 .is-above-footer {
   margin-bottom: 0rem !important;

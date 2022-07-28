@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
 
     <!-- Primary Meta Tags -->
     <title>Monotab</title>
@@ -17,6 +17,10 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <script src="node_modules/midi-player-js/browser/midiplayer.js"></script>
+    <script src="node_modules/midi-writer-js/browser/midiwriter.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -44,9 +48,13 @@
                 <!--Hero: Retratos-->
                 <section class="hero is-fullheight">
                     <div class="hero-body">
-                        <p class="title">
-                            Serie retratos
-                        </p>
+
+                        <div>
+                            <textarea class="textarea" placeholder="Tab here" rows="17"></textarea>
+                        </div><br><br><br>
+                        <div>
+                            <button class="button" onclick="playTextarea()">Play tab</button>
+                        </div>
 
                     </div>
                 </section>
