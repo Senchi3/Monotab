@@ -1,0 +1,109 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+}
+
+p {
+  font-family: "Merriweather", serif;
+}
+
+ul {
+  font-family: "Merriweather", serif;
+  list-style-type: circle;
+  list-style-position: outside;
+}
+
+li {
+  font-family: "Merriweather", serif;
+  list-style-position: outside;
+}
+
+a {
+  font-family: "Merriweather", serif;
+}
+
+li {
+  padding: 0.5em !important;
+}
+
+
+
+.is-above-footer {
+  margin-bottom: 0rem !important;
+}
+
+
+
+/* Menus*/
+.menu {
+  position: sticky;
+  display: inline-block;
+  max-height: 100vh;
+  top: 0;
+  bottom: 0;
+  padding: 2em;
+}
+
+.menu-label {
+  color: #f4f1de;
+}
+
+.menu-list {
+  color: #f4f1de;
+}
+
+/* Colors */
+
+.is-light {
+  background-color: #f4f1de !important;
+  color: #3d405b !important;
+}
+
+.is-dark {
+  background-color: #3d405b !important;
+  color: #f4f1de !important;
+}
+
+.is-dark-button {
+  background-color: #3d405b !important;
+  color: #f4f1de !important;
+  transition: 0.15s;
+}
+
+.is-dark-button:hover {
+  background-color: #f4f1de !important;
+  color: #3d405b !important;
+}
+
+.is-primary {
+  background-color: #e07a5f !important;
+}
+
+.is-link {
+  background-color: #17bebb !important;
+}
+
+.is-info {
+  background-color: #63b4d1 !important;
+}
+
+.is-success {
+  background-color: #81b29a !important;
+}
+
+.is-warning {
+  background-color: #f2cc8f !important;
+}
+
+.is-danger {
+  background-color: #8c1c13 !important;
+}
+
+.is-link-text {
+  color: #17bebb !important;
+}

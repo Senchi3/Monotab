@@ -1,4 +1,7 @@
 const MidiWriter = require('midi-writer-js');
+var MidiPlayer = require('midi-player-js');
+
+
 
 const track = new MidiWriter.Track();
 
@@ -16,4 +19,15 @@ track.addEvent([
 );
 
 const write = new MidiWriter.Writer(track);
-console.log(write.dataUri("test.mid"));
+console.log(write.dataUri('./test.mid'));
+
+
+
+// Initialize player and register event handler
+var Player = new MidiPlayer.Player(function(event) {
+	console.log(event);
+});
+
+// Load a MIDI file
+Player.loadFile(write.dataUri('./test.mid'));
+Player.play();
