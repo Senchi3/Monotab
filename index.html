@@ -20,7 +20,8 @@
 
     <script src="node_modules/midi-player-js/browser/midiplayer.js"></script>
     <script src="node_modules/midi-writer-js/browser/midiwriter.js"></script>
-    <script src="main.js"></script>
+    <script src="scripts/soundfont-player.min.js"></script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -53,7 +54,8 @@
                             <textarea class="textarea" placeholder="Tab here" rows="17"></textarea>
                         </div><br><br><br>
                         <div>
-                            <button class="button" onclick="playTextarea()">Play tab</button>
+                            <button class="button button-primary" id="play-button" onclick="Player.isPlaying() ? pause() : play();">Play</button>
+                            <button class="button" onclick="stop()">Stop</button>
                         </div>
 
                     </div>
